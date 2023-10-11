@@ -134,6 +134,7 @@ export const BlockRenderer = ({ blocks }) => {
                 </Columns>;
             }
             case "core/column": {
+                //console.log("CONSOLE: ", block.attributes);
                 return <Column
                     key={block.id}
                     width={block.attributes.width}
