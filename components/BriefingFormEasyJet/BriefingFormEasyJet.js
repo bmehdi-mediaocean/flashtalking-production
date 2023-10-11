@@ -3,7 +3,7 @@ import { ValidationError, useForm } from "@formspree/react";
 import { Input } from "components/Input";
 
 export const BriefingFormEasyJet = ({ formId }) => {
-    console.log("FORM ID: ", formId);
+    //console.log("FORM ID: ", formId);
     const [state, handleSubmit] = useForm(formId);
 
     if (state.succeeded) {

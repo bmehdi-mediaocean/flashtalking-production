@@ -37,7 +37,7 @@ export const CreativeSearch = () => {
             }),
         });
         const data = await response.json();
-        console.log("SEARCH DATA: ", data);
+        //console.log("SEARCH DATA: ", data);
         setCreatives(data.creatives);
         setTotalResults(data.total);
     };
@@ -55,7 +55,7 @@ export const CreativeSearch = () => {
     const handleSearch = async ({ display, social, sizes, markets }) => {
         // update our browser URL
         // search
-        console.log("FILTERS: ", display, social, sizes, markets);
+        //console.log("FILTERS: ", display, social, sizes, markets);
         router.push(`${pathname}?page=1&display=${!!display}&social=${!!social}&sizes=${sizes}&markets=${markets}`);
     };
 

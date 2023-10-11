@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export const CreativeCard = ({ title, destination, image, brand, sizes, markets, display, social }) => {
     return <Link href={destination} className="border-2 border-slate-300 p-5 block bg-slate-100 hover:bg-slate-200">
-        <div className="flex w-full">
+        <div className="flex w-full h-[200px] relative">
             <Image
                 src={image}
-                height="200"
-                width="300"
-                style={{objectFit: "cover"}}
-                alt=""
-                priority={true}
+                fill
+                sizes="300px"
+                alt="Creative Card Cover"
+                className="object-cover"
+                priority
             />
         </div>
         <div className="mt-3 text-lg font-bold">{title}</div>
