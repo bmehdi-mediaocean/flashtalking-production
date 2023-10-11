@@ -158,7 +158,6 @@ export const BlockRenderer = ({ blocks }) => {
                 />;
             }
             case "core/image": {
-                //console.log("CONSOLE: ", block.attributes);
                 return <Image
                     key={block.id}
                     src={block.attributes.url}
