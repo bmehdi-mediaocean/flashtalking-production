@@ -20,11 +20,12 @@ export const getPage = async (uri) => {
     };
 
     const response = await fetch(process.env.WP_GRAPHQL_URL, {
-        method: "POST",
-        headers: {
-            'Content-Type': "application/json"
-        },
-        body: JSON.stringify(params)
+      next: { revalidate: 30 },
+      method: "POST",
+      headers: {
+        'Content-Type': "application/json"
+      },
+      body: JSON.stringify(params)
     });
     const {data} = await response.json();
     if (!data.nodeByUri) {
