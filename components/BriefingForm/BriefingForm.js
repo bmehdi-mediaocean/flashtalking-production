@@ -138,9 +138,9 @@ export const BriefingForm = ({ formId }) => {
                 </li>
                 <li className="form-li-full">
                     <div className="question-wrapper">
-                        <label htmlFor="business-objectives">Business Objective & KPI's <span className="text-red-500">*</span></label>
+                        <label htmlFor="business-objectives">Business Objective & KPI&apos;s <span className="text-red-500">*</span></label>
                         <textarea id="business-objectives" name="business-objectives" required />
-                        <ValidationError prefix="Business Objective & KPI's" field="message" errors={state.errors} />
+                        <ValidationError prefix="Business Objective & KPIs" field="message" errors={state.errors} />
                     </div>
                 </li>
 
