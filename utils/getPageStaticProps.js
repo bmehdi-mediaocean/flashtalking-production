@@ -75,5 +75,6 @@ export const getPageStaticProps = async (context) => {
         ctaDestination: data.acfOptionsMainMenu.mainMenu.ctaButton.destination.uri,
         blocks: cleanAndTransformBlocks(data.nodeByUri.blocks),
       },
+      revalidate: 10,
     };
 };
