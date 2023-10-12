@@ -6,14 +6,16 @@ export const MainMenu = ({ items, ctaLabel, ctaDestination }) => {
     //console.log("MAIN MENU: ", items);
     return <div className="bg-slate-800 text-white px-5 h-16 sticky top-0 z-20 flex">
         <div className="py-2.5 pl-5 flex text-flashtalking-pink">
-            <Image
-                alt="Logo"
-                src="/flashtalking.svg"
-                width={0}
-                height={0}
-                priority={true}
-                className="w-full"
-            />
+            <Link href="/" className="flex">
+                <Image
+                    alt="Logo"
+                    src="/flashtalking.svg"
+                    width={0}
+                    height={0}
+                    priority
+                    className="w-full"
+                />
+            </Link>
         </div>
         <div className="flex flex-1 justify-end">
             {(items || []).map(item => (

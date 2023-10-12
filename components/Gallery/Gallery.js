@@ -27,8 +27,9 @@ export const Gallery = ({ columns, cropImages, items }) => {
                     src={item.attributes.url}
                     height={maxHeight || item.attributes.height}
                     width={maxWidth || item.attributes.width}
-                    alt={item.attributes.alt}
-                    style={{objectFit: "cover"}}
+                    alt={item.attributes.alt || ""}
+                    className="object-cover"
+                    priority
                 />
             </div>
         ))}

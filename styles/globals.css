@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
     .btn {
-        @apply bg-flashtalking-pink hover:bg-pink-700 inline-block my-2 px-8 py-3 uppercase rounded-sm cursor-pointer font-bold text-white;
+        @apply bg-flashtalking-pink hover:bg-pink-700 inline-block my-2 px-4 py-2 uppercase rounded-sm cursor-pointer font-bold text-white;
     }
 
     .form-ul {

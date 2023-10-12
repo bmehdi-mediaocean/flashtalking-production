@@ -1,7 +1,8 @@
+"use client";
 import { useEffect, useState } from "react";
 import { Results } from "./Results";
 import { Pagination } from "./Pagination";
-import { useRouter } from "next/router";
+import { useRouter, usePathname } from "next/navigation";
 import queryString from "query-string";
 import { Filters } from "./Filters";
 
@@ -10,6 +11,7 @@ export const CreativeSearch = () => {
     const [totalResults, setTotalResults] = useState(0);
     const pageSize = 9;
     const router = useRouter();
+    const pathname = usePathname();
 
     const search = async () => {
         const { page, markets, sizes, social, display } = queryString.parse(window.location.search);
@@ -35,7 +37,7 @@ export const CreativeSearch = () => {
             }),
         });
         const data = await response.json();
-        console.log("SEARCH DATA: ", data);
+        //console.log("SEARCH DATA: ", data);
         setCreatives(data.creatives);
         setTotalResults(data.total);
     };
@@ -43,10 +45,7 @@ export const CreativeSearch = () => {
     const handlePageClick = async (pageNumber) => {
         const { display, social, sizes, markets } = queryString.parse(window.location.search);
 
-        await router.push(`${router.query.slug.join("/")}?page=${pageNumber}&display=${display === "true"}&social=${social === "true"}&sizes=${sizes}&markets=${markets}`, null, {
-            shallow: true,
-        });
-        search();
+        router.push(`${pathname}?page=${pageNumber}&display=${display === "true"}&social=${social === "true"}&sizes=${sizes}&markets=${markets}`);
     };
 
     useEffect(() => {
@@ -56,11 +55,8 @@ export const CreativeSearch = () => {
     const handleSearch = async ({ display, social, sizes, markets }) => {
         // update our browser URL
         // search
-        console.log("FILTERS: ", display, social, sizes, markets);
-        await router.push(`${router.query.slug.join("/")}?page=1&display=${!!display}&social=${!!social}&sizes=${sizes}&markets=${markets}`, null, {
-            shallow: true,
-        });
-        search();
+        //console.log("FILTERS: ", display, social, sizes, markets);
+        router.push(`${pathname}?page=1&display=${!!display}&social=${!!social}&sizes=${sizes}&markets=${markets}`);
     };
 
     return <div>
