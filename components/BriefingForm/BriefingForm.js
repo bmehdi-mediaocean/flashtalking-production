@@ -75,21 +75,6 @@ export const BriefingForm = ({ formId }) => {
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
-                        <label htmlFor="max-creative-file-weight">If known, what is the max file weight per creative for this campaign in Flashtalking?</label>
-                        <Input id="max-creative-file-weight" type="text" name="max-creative-file-weight" list="max-creative-file-weight" />
-                        <datalist id="max-creative-file-weight">
-                            <option value="Not known" />
-                            <option value="100KB" />
-                            <option value="150KB" />
-                            <option value="200KB" />
-                            <option value="250KB" />
-                            <option value="300KB" />
-                        </datalist>
-                        <ValidationError prefix="Max Creative File Weight" field="name" errors={state.errors} />
-                    </div>
-                </li>
-                <li className="form-li-half">
-                    <div className="question-wrapper">
                         <label htmlFor="creative-sizes">Creative Sizes Required <span className="text-red-500">*</span></label>
                         <Input id="creative-sizes" type="text" name="creative-sizes" required />
                         <ValidationError prefix="Creative Sizes Required" field="subject" errors={state.errors} />
@@ -113,6 +98,22 @@ export const BriefingForm = ({ formId }) => {
                             <option value="20+ versions">20+ versions</option>
                         </select>
                         <ValidationError prefix="Dynamic Messaging Versions" field="name" errors={state.errors} />
+                    </div>
+                </li>
+                <li className="form-li-half">
+                    <div className="question-wrapper">
+                        <label htmlFor="max-creative-file-weight">If known, what is the max file weight per creative for this campaign in Flashtalking?</label>
+                        <select id="max-creative-file-weight" name="max-creative-file-weight" defaultValue="Choose">
+                            <option value="Choose" disabled hidden>Choose</option>
+                            <option value="Not known">Not known</option>
+                            <option value="100KB">100KB</option>
+                            <option value="150KB">150KB</option>
+                            <option value="200KB">200KB</option>
+                            <option value="250KB">250KB</option>
+                            <option value="300KB">300KB</option>
+                            <option value="300+KB">300+KB</option>
+                        </select>
+                        <ValidationError prefix="Max Creative File Weight" field="name" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
