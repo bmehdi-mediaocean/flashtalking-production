@@ -273,7 +273,7 @@ export const BriefingFormEasyJet = ({ formId }) => {
                 </li>
 
                 <li className="form-li-headline">
-                    <div className="headline-wrapper">Tracking Information</div>
+                    <div className="headline-wrapper">Trafficking Information</div>
                 </li>
                 <li className="form-li-full">
                     <div className="question-wrapper">
