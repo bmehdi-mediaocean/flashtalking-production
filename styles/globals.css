@@ -3,16 +3,24 @@
 @tailwind utilities;
 
 @layer components {
+    .main-menu {
+        @apply bg-slate-800 text-white px-5 h-16 sticky top-0 z-20 flex;
+    }
+
+    .logo-div {
+        @apply pr-5 sm:pr-5 md:pl-5 py-2.5 flex text-flashtalking-pink w-16 h-16;
+    }
+
     .btn {
         @apply bg-flashtalking-pink hover:bg-pink-700 inline-block my-2 px-4 py-2 uppercase rounded-sm cursor-pointer font-bold text-white;
     }
 
     .form-ul {
-        @apply mx-32 flex flex-wrap items-start list-none border border-[#98B7D2] rounded;
+        @apply mx-4 sm:mx-8 md:mx-16 lg:mx-32 flex flex-wrap items-start list-none border border-[#98B7D2] rounded;
     }
 
     .form-li-half {
-        @apply py-0 px-6 my-1 flex flex-wrap items-start w-1/2 min-h-[5rem];
+        @apply w-full min-[500px]:w-1/2 py-0 px-6 my-1 flex flex-wrap items-start min-h-[5rem];
     }
 
     .form-li-full {

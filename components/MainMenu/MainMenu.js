@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export const MainMenu = ({ items, ctaLabel, ctaDestination }) => {
     //console.log("MAIN MENU: ", items);
-    return <div className="bg-slate-800 text-white px-5 h-16 sticky top-0 z-20 flex">
-        <div className="py-2.5 pl-5 flex text-flashtalking-pink w-16 h-16">
+    return <div className="main-menu">
+        <div className="logo-div">
             <Link href="/" className="flex w-full">
                 <Image
                     alt="Logo"
