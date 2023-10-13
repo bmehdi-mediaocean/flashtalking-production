@@ -51,6 +51,45 @@ export const BriefingFormEasyJet = ({ formId }) => {
                 </li>
                 <li className="form-li-full">
                     <div className="question-wrapper">
+                        <label htmlFor="brands">Brands <span className="text-red-500">*</span></label>
+                        <select id="brands" name="Brands" defaultValue="Choose" required>
+                            <option value="Choose" disabled hidden>Choose</option>
+                            <option value="Flights">Flights</option>
+                            <option value="Holiday">Holiday</option>
+                            <option value="Both">Both</option>
+                        </select>
+                        <ValidationError prefix="Brands" field="name" errors={state.errors} />
+                    </div>
+                </li>
+                <li className="form-li-full">
+                    <div className="question-wrapper">
+                        <label htmlFor="markets">Markets <span className="text-red-500">*</span></label>
+                        <div className="checkbox-wrapper flex-row">
+                            <div className="w-1/2">
+                                <div className="checkbox-input"><Input id="uk" type="checkbox" name="Markets: UK" /><label htmlFor="uk">UK</label></div>
+                                <div className="checkbox-input"><Input id="fr" type="checkbox" name="Markets: FR" /><label htmlFor="fr">FR</label></div>
+                                <div className="checkbox-input"><Input id="ch" type="checkbox" name="Markets: CH" /><label htmlFor="ch">CH</label></div>
+                                <div className="checkbox-input"><Input id="de" type="checkbox" name="Markets: DE" /><label htmlFor="de">DE</label></div>
+                            </div>
+                            <div className="w-1/2">
+                                <div className="checkbox-input"><Input id="nl" type="checkbox" name="Markets: NL" /><label htmlFor="nl">NL</label></div>
+                                <div className="checkbox-input"><Input id="it" type="checkbox" name="Markets: IT" /><label htmlFor="it">IT</label></div>
+                                <div className="checkbox-input"><Input id="pl" type="checkbox" name="Markets: PL" /><label htmlFor="pl">PL</label></div>
+                                <div className="checkbox-input"><Input id="other" type="checkbox" name="Markets: Other" /><label htmlFor="other">Other</label></div>
+                            </div>
+                        </div>
+                        <ValidationError prefix="Creative Formats" field="_optin" errors={state.errors} />
+                    </div>
+                </li>
+                <li className="form-li-full">
+                    <div className="question-wrapper">
+                        <label htmlFor="other-markets">If other, please specify below:</label>
+                        <Input id="other-markets" type="text" name="Other Markets" />
+                        <ValidationError prefix="Other Markets" field="name" errors={state.errors} />
+                    </div>
+                </li>
+                <li className="form-li-full">
+                    <div className="question-wrapper">
                         <label htmlFor="creative-formats">Creative Formats Required <span className="text-red-500">*</span></label>
                         <div className="checkbox-wrapper flex-row">
                             <div className="w-1/2">
