@@ -204,7 +204,7 @@ export const BriefingFormEasyJet = ({ formId }) => {
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="email-supplier-more-info">Email of Supplier / More Information</label>
-                        <textarea id="email-supplier-more-info" name="email-supplier-more-info" className="h-32" />
+                        <textarea id="email-supplier-more-info" name="email-supplier-more-info" className="!h-32" />
                         <ValidationError prefix="Email Supplier More Info" field="message" errors={state.errors} />
                     </div>
                 </li>
