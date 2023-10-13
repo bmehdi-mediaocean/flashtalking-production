@@ -20,77 +20,77 @@ export const BriefingForm = ({ formId }) => {
                 <li className="form-li-full">
                     <div className="question-wrapper">
                         <label htmlFor="project-title">Project Title <span className="text-red-500">*</span></label>
-                        <Input id="project-title" type="text" name="project-title" required />
+                        <Input id="project-title" type="text" name="Project Title" required />
                         <ValidationError prefix="Project Title" field="name" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="company-name">Company Name <span className="text-red-500">*</span></label>
-                        <Input id="company-name" type="text" name="company-name" required />
+                        <Input id="company-name" type="text" name="Company Name" required />
                         <ValidationError prefix="Company Name" field="name" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="live-date">Campaign Live Date <span className="text-red-500">*</span></label>
-                        <Input id="live-date" type="date" name="live-date" required />
+                        <Input id="live-date" type="date" name="Campaign Live Date" required />
                         <ValidationError prefix="Campaign Live Date" field="date" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="full-name">Full Name <span className="text-red-500">*</span></label>
-                        <Input id="full-name" type="text" name="full-name" required />
+                        <Input id="full-name" type="text" name="Full Name" required />
                         <ValidationError prefix="Full Name" field="name" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="email">Email Address <span className="text-red-500">*</span></label>
-                        <Input id="email" type="email" name="email" placeholder="name@domain.com" required />
+                        <Input id="email" type="email" name="Email Address" placeholder="name@domain.com" required />
                         <ValidationError prefix="Email Address" field="email" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="media-buyer">Media Buyer <span className="text-red-500">*</span></label>
-                        <Input id="media-buyer" type="text" name="media-buyer" required />
+                        <Input id="media-buyer" type="text" name="Media Buyer" required />
                         <ValidationError prefix="Media Buyer" field="name" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="media-buyer-email">Media Buyer Email Address</label>
-                        <Input id="media-buyer-email" type="email" name="media-buyer-email" placeholder="name@domain.com" />
+                        <Input id="media-buyer-email" type="email" name="Media Buyer Email Address" placeholder="name@domain.com" />
                         <ValidationError prefix="Media Buyer Email Address" field="email" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="ft-campaign-manager">Flashtalking Campaign Manager</label>
-                        <Input id="ft-campaign-manager" type="text" name="ft-campaign-manager" />
+                        <Input id="ft-campaign-manager" type="text" name="Flashtalking Campaign Manager" />
                         <ValidationError prefix="Flashtalking Campaign Manager" field="name" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="creative-sizes">Creative Sizes Required <span className="text-red-500">*</span></label>
-                        <Input id="creative-sizes" type="text" name="creative-sizes" required />
+                        <Input id="creative-sizes" type="text" name="Creative Sizes Required" required />
                         <ValidationError prefix="Creative Sizes Required" field="subject" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="languages">Additional Languages</label>
-                        <Input id="languages" type="text" name="languages" />
+                        <Input id="languages" type="text" name="Additional Languages" />
                         <ValidationError prefix="Additional Languages" field="name" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="dynamic-versions">Dynamic Messaging Versions</label>
-                        <select id="dynamic-versions" name="dynamic-versions" defaultValue="Choose">
+                        <select id="dynamic-versions" name="Dynamic Messaging Versions" defaultValue="Choose">
                             <option value="Choose" disabled hidden>Choose</option>
                             <option value="Only a single version required">Only a single version required</option>
                             <option value="2-5 versions">2-5 versions</option>
@@ -103,7 +103,7 @@ export const BriefingForm = ({ formId }) => {
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="max-creative-file-weight">If known, what is the max file weight per creative for this campaign in Flashtalking?</label>
-                        <select id="max-creative-file-weight" name="max-creative-file-weight" defaultValue="Choose">
+                        <select id="max-creative-file-weight" name="Max Creative File Weight" defaultValue="Choose">
                             <option value="Choose" disabled hidden>Choose</option>
                             <option value="Not known">Not known</option>
                             <option value="100KB">100KB</option>
@@ -119,7 +119,7 @@ export const BriefingForm = ({ formId }) => {
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="update-versions">Does client or their partners intend to update versions themselves in the future?</label>
-                        <select id="update-versions" name="update-versions" defaultValue="Choose">
+                        <select id="update-versions" name="Does client or their partners intend to update versions themselves in the future?" defaultValue="Choose">
                             <option value="Choose" disabled hidden>Choose</option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
@@ -132,14 +132,14 @@ export const BriefingForm = ({ formId }) => {
                         <label htmlFor="feed-integrations">Feed Integrations</label>
                         <div className="checkbox-wrapper flex-row">
                             <div className="w-1/2">
-                                <div className="checkbox-input"><Input id="no-feed" type="checkbox" name="no-feed" /><label htmlFor="no-feed">No Feed</label></div>
-                                <div className="checkbox-input"><Input id="product-feed" type="checkbox" name="product-feed" /><label htmlFor="product-feed">Product Feed (Retargeting)</label></div>
-                                <div className="checkbox-input"><Input id="store-feed" type="checkbox" name="store-feed" /><label htmlFor="store-feed">Store Locator Feed</label></div>
+                                <div className="checkbox-input"><Input id="no-feed" type="checkbox" name="Feed Integrations: No Feed" /><label htmlFor="no-feed">No Feed</label></div>
+                                <div className="checkbox-input"><Input id="product-feed" type="checkbox" name="Feed Integrations: Product Feed" /><label htmlFor="product-feed">Product Feed (Retargeting)</label></div>
+                                <div className="checkbox-input"><Input id="store-feed" type="checkbox" name="Feed Integrations: Store Feed" /><label htmlFor="store-feed">Store Locator Feed</label></div>
                             </div>
                             <div className="w-1/2">
-                                <div className="checkbox-input"><Input id="weather-feed" type="checkbox" name="weather-feed" /><label htmlFor="weather-feed">Weather Feed</label></div>
-                                <div className="checkbox-input"><Input id="live-event-feed" type="checkbox" name="live-event-feed" /><label htmlFor="live-event-feed">Live Event Feed</label></div>
-                                <div className="checkbox-input"><Input id="other-feed" type="checkbox" name="other-feed" /><label htmlFor="other-feed">Other Feed</label></div>
+                                <div className="checkbox-input"><Input id="weather-feed" type="checkbox" name="Feed Integrations: Weather Feed" /><label htmlFor="weather-feed">Weather Feed</label></div>
+                                <div className="checkbox-input"><Input id="live-event-feed" type="checkbox" name="Feed Integrations: Live Event Feed" /><label htmlFor="live-event-feed">Live Event Feed</label></div>
+                                <div className="checkbox-input"><Input id="other-feed" type="checkbox" name="Feed Integrations: Other Feed" /><label htmlFor="other-feed">Other Feed</label></div>
                             </div>
                         </div>
                         <ValidationError prefix="Feed Integrations" field="_optin" errors={state.errors} />
@@ -148,14 +148,14 @@ export const BriefingForm = ({ formId }) => {
                 <li className="form-li-full">
                     <div className="question-wrapper">
                         <label htmlFor="project-description">Project Description <span className="text-red-500">*</span></label>
-                        <textarea id="project-description" name="project-description" required />
+                        <textarea id="project-description" name="Project Description" required />
                         <ValidationError prefix="Project Description" field="message" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-full">
                     <div className="question-wrapper">
                         <label htmlFor="business-objectives">Business Objective & KPI&apos;s <span className="text-red-500">*</span></label>
-                        <textarea id="business-objectives" name="business-objectives" required />
+                        <textarea id="business-objectives" name="Business Objective & KPI&apos;s" required />
                         <ValidationError prefix="Business Objective & KPIs" field="message" errors={state.errors} />
                     </div>
                 </li>
@@ -166,7 +166,7 @@ export const BriefingForm = ({ formId }) => {
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="designs-supplied">Designs To Be Supplied By <span className="text-red-500">*</span></label>
-                        <select id="designs-supplied" name="designs-supplied" defaultValue="Choose" required>
+                        <select id="designs-supplied" name="Designs To Be Supplied By" defaultValue="Choose" required>
                             <option value="Choose" disabled hidden>Choose</option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
@@ -178,27 +178,27 @@ export const BriefingForm = ({ formId }) => {
                     <div className="question-wrapper">
                         <label htmlFor="feed-integrations">Assets To Be Supplied</label>
                         <div className="checkbox-wrapper">
-                            <div className="checkbox-input"><Input id="brand-guidelines" type="checkbox" name="brand-guidelines" /><label htmlFor="brand-guidelines">Brand Guidelines</label></div>
-                            <div className="checkbox-input"><Input id="brand-fonts" type="checkbox" name="brand-fonts" /><label htmlFor="brand-fonts">Brand Fonts</label></div>
-                            <div className="checkbox-input"><Input id="logos" type="checkbox" name="logos" /><label htmlFor="logos">Logos</label></div>
-                            <div className="checkbox-input"><Input id="artwork" type="checkbox" name="artwork" /><label htmlFor="artwork">Artwork</label></div>
-                            <div className="checkbox-input"><Input id="videos" type="checkbox" name="videos" /><label htmlFor="videos">Videos</label></div>
-                            <div className="checkbox-input"><Input id="messaging" type="checkbox" name="messaging" /><label htmlFor="messaging">Messaging</label></div>
+                            <div className="checkbox-input"><Input id="brand-guidelines" type="checkbox" name="Assets To Be Supplied: Brand Guidelines" /><label htmlFor="brand-guidelines">Brand Guidelines</label></div>
+                            <div className="checkbox-input"><Input id="brand-fonts" type="checkbox" name="Assets To Be Supplied: Brand Fonts" /><label htmlFor="brand-fonts">Brand Fonts</label></div>
+                            <div className="checkbox-input"><Input id="logos" type="checkbox" name="Assets To Be Supplied: Logos" /><label htmlFor="logos">Logos</label></div>
+                            <div className="checkbox-input"><Input id="artwork" type="checkbox" name="Assets To Be Supplied: Artwork" /><label htmlFor="artwork">Artwork</label></div>
+                            <div className="checkbox-input"><Input id="videos" type="checkbox" name="Assets To Be Supplied: Videos" /><label htmlFor="videos">Videos</label></div>
+                            <div className="checkbox-input"><Input id="messaging" type="checkbox" name="Assets To Be Supplied: Messaging" /><label htmlFor="messaging">Messaging</label></div>
                         </div>
                         <ValidationError prefix="Assets Supplied" field="_optin" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
-                        <label htmlFor="date-supplied">Date Assets To Be Supplied</label>
-                        <Input id="date-supplied" type="date" name="date-supplied" />
+                        <label htmlFor="date-supplied">Date Assets To Be Supplied By</label>
+                        <Input id="date-supplied" type="date" name="Date Assets To Be Supplied By" />
                         <ValidationError prefix="Date Assets To Be Supplied" field="date" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="sign-off-email">Contact Email For Assets and Design Sign Off</label>
-                        <Input id="sign-off-email" type="email" name="sign-off-email" placeholder="name@domain.com" />
+                        <Input id="sign-off-email" type="email" name="Contact Email For Assets and Design Sign Off" placeholder="name@domain.com" />
                         <ValidationError prefix="Sign Off Email" field="email" errors={state.errors} />
                     </div>
                 </li>
@@ -209,14 +209,14 @@ export const BriefingForm = ({ formId }) => {
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="required-functionality">Any Specific Required Functionality</label>
-                        <textarea id="required-functionality" name="required-functionality" />
+                        <textarea id="required-functionality" name="Any Specific Required Functionality" />
                         <ValidationError prefix="Required Functionality" field="message" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="required-tracking">Any Specific Required Tracking</label>
-                        <textarea id="required-tracking" name="required-tracking" />
+                        <textarea id="required-tracking" name="Any Specific Required Tracking" />
                         <ValidationError prefix="Required Tracking" field="message" errors={state.errors} />
                     </div>
                 </li>
@@ -227,7 +227,7 @@ export const BriefingForm = ({ formId }) => {
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="versions-setup">Dynamic Messaging Versions To Be Set Up By</label>
-                        <select id="versions-setup" name="versions-setup" defaultValue="Choose">
+                        <select id="versions-setup" name="Dynamic Messaging Versions To Be Set Up By" defaultValue="Choose">
                             <option value="Choose" disabled hidden>Choose</option>
                             <option value="Flashtalking">Flashtalking</option>
                             <option value="Client">Client</option>
@@ -240,7 +240,7 @@ export const BriefingForm = ({ formId }) => {
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="backup-messaging">Backup Messaging</label>
-                        <textarea id="backup-messaging" name="backup-messaging" />
+                        <textarea id="backup-messaging" name="Backup Messaging" />
                         <ValidationError prefix="Backup Messaging" field="message" errors={state.errors} />
                     </div>
                 </li>
@@ -251,21 +251,21 @@ export const BriefingForm = ({ formId }) => {
                 <li className="form-li-full">
                     <div className="question-wrapper">
                         <label htmlFor="additional-requirements">Please Send Us Anything Required Here (WeTransfer, DropBox etc.)</label>
-                        <Input id="additional-requirements" type="text" name="additional-requirements" />
+                        <Input id="additional-requirements" type="text" name="Additional Requirements" />
                         <ValidationError prefix="Additional Requirements" field="name" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-full">
                     <div className="question-wrapper">
                         <label htmlFor="additional-notes">Additional Notes</label>
-                        <textarea id="additional-notes" name="additional-notes" />
+                        <textarea id="additional-notes" name="Additional Notes" />
                         <ValidationError prefix="Additional Notes" field="message" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-full mb-2">
                     <div className="question-wrapper">
                         <label htmlFor="additional-url">Additional URL</label>
-                        <Input id="additional-url" type="text" name="additional-url" />
+                        <Input id="additional-url" type="text" name="Additional URL" />
                         <ValidationError prefix="Additional URL" field="name" errors={state.errors} />
                     </div>
                 </li>
