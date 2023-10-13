@@ -79,8 +79,9 @@ export const BriefingFormEasyJet = ({ formId }) => {
                 <li className="form-li-full">
                     <div className="question-wrapper">
                         <label htmlFor="creative-information">Creative Sizes / Video Lengths etc.</label>
-                        <textarea id="creative-information" name="creative-information" placeholder="Please specify sizes required for each channel. For Display, please list any additional sizes/formats beyond the standard 8. For Video, please specify video lengths (e.g., 6&quot;, 10&quot;, etc.)" />
+                        <textarea id="creative-information" name="creative-information" />
                         <ValidationError prefix="Creative Information" field="message" errors={state.errors} />
+                        <div className="text-xs pt-[0.375rem]">Please specify sizes required for each channel. For Display, please list any additional sizes/formats beyond the standard 8. For Video, please specify video lengths (e.g., 6&quot;, 10&quot;, etc.)</div>
                     </div>
                 </li>
                 <li className="form-li-half">
@@ -167,9 +168,10 @@ export const BriefingFormEasyJet = ({ formId }) => {
                 </li>
                 <li className="form-li-full">
                     <div className="question-wrapper">
-                        <label htmlFor="supplier-email">Supplier Email</label>
-                        <Input id="supplier-email" type="supplier-email" name="supplier-email" placeholder="If not supplied direct" />
+                        <label htmlFor="supplier-email">Email of Supplier</label>
+                        <Input id="supplier-email" type="supplier-email" name="supplier-email" placeholder="name@domain.com" />
                         <ValidationError prefix="Supplier Email" field="supplier-email" errors={state.errors} />
+                        <div className="text-xs pt-[0.375rem]">If not supplied direct</div>
                     </div>
                 </li>
 
@@ -204,8 +206,9 @@ export const BriefingFormEasyJet = ({ formId }) => {
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="email-supplier-more-info">Email of Supplier / More Information</label>
-                        <textarea id="email-supplier-more-info" name="email-supplier-more-info" className="!h-32" />
+                        <textarea id="email-supplier-more-info" name="email-supplier-more-info" />
                         <ValidationError prefix="Email Supplier More Info" field="message" errors={state.errors} />
+                        <div className="text-xs pt-[0.375rem]">e.g., Existing imagery examples, details of purchased images, etc.</div>
                     </div>
                 </li>
                 <li className="form-li-half">
@@ -238,6 +241,7 @@ export const BriefingFormEasyJet = ({ formId }) => {
                         <label htmlFor="version_file_name_suffix">Version &#38; File Name Suffix</label>
                         <Input id="version_file_name_suffix" type="text" name="version_file_name_suffix" placeholder="e.g. FTFR_JL_FR" />
                         <ValidationError prefix="Version File Name Suffix" field="name" errors={state.errors} />
+                        <div className="text-xs pt-[0.375rem]">Please confirm this with Kepler</div>
                     </div>
                 </li>
                 <li className="form-li-half">
@@ -258,6 +262,7 @@ export const BriefingFormEasyJet = ({ formId }) => {
                         <label htmlFor="other-versions-added-to">If &apos;Existing Basefiles&apos; or other, please give details below:</label>
                         <Input id="other-versions-added-to" type="text" name="other-versions-added-to" />
                         <ValidationError prefix="Other Versions Added To" field="name" errors={state.errors} />
+                        <div className="text-xs pt-[0.375rem]">e.g., Flashtalking preview link or basefile names</div>
                     </div>
                 </li>
                 
