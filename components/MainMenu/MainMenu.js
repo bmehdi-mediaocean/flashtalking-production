@@ -5,7 +5,7 @@ import Link from "next/link";
 export const MainMenu = ({ items, ctaLabel, ctaDestination }) => {
     //console.log("MAIN MENU: ", items);
     return <div className="bg-slate-800 text-white px-5 h-16 sticky top-0 z-20 flex">
-        <div className="py-2.5 pl-5 flex text-flashtalking-pink">
+        <div className="py-2.5 pl-5 flex text-flashtalking-pink h-16">
             <Link href="/" className="flex">
                 <Image
                     alt="Logo"
