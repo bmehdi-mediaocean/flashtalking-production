@@ -17,11 +17,18 @@ export const BriefingForm = ({ formId }) => {
                 <li className="form-li-headline border-t-0">
                     <div className="headline-wrapper">Project Details</div>
                 </li>
-                <li className="form-li-half">
+                <li className="form-li-full">
                     <div className="question-wrapper">
                         <label htmlFor="project-title">Project Title <span className="text-red-500">*</span></label>
                         <Input id="project-title" type="text" name="project-title" required />
                         <ValidationError prefix="Project Title" field="name" errors={state.errors} />
+                    </div>
+                </li>
+                <li className="form-li-half">
+                    <div className="question-wrapper">
+                        <label htmlFor="company-name">Company Name <span className="text-red-500">*</span></label>
+                        <Input id="company-name" type="text" name="company-name" required />
+                        <ValidationError prefix="Company Name" field="name" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
@@ -47,8 +54,8 @@ export const BriefingForm = ({ formId }) => {
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
-                        <label htmlFor="media-buyer">Media Buyer</label>
-                        <Input id="media-buyer" type="text" name="media-buyer" />
+                        <label htmlFor="media-buyer">Media Buyer <span className="text-red-500">*</span></label>
+                        <Input id="media-buyer" type="text" name="media-buyer" required />
                         <ValidationError prefix="Media Buyer" field="name" errors={state.errors} />
                     </div>
                 </li>
@@ -68,9 +75,17 @@ export const BriefingForm = ({ formId }) => {
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
-                        <label htmlFor="ad-file-size-limit">Ad File Size Limit</label>
-                        <Input id="ad-file-size-limit" type="text" name="ad-file-size-limit" />
-                        <ValidationError prefix="Ad File Size Limit" field="name" errors={state.errors} />
+                        <label htmlFor="max-creative-file-weight">If known, what is the max file weight per creative for this campaign in Flashtalking?</label>
+                        <Input id="max-creative-file-weight" type="text" name="max-creative-file-weight" list="max-creative-file-weight" />
+                        <datalist id="max-creative-file-weight">
+                            <option value="Not known" />
+                            <option value="100KB" />
+                            <option value="150KB" />
+                            <option value="200KB" />
+                            <option value="250KB" />
+                            <option value="300KB" />
+                        </datalist>
+                        <ValidationError prefix="Max Creative File Weight" field="name" errors={state.errors} />
                     </div>
                 </li>
                 <li className="form-li-half">
@@ -102,7 +117,7 @@ export const BriefingForm = ({ formId }) => {
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
-                        <label htmlFor="update-versions">Does client or their partners intend to update versions themselves in the future</label>
+                        <label htmlFor="update-versions">Does client or their partners intend to update versions themselves in the future?</label>
                         <select id="update-versions" name="update-versions" defaultValue="Choose">
                             <option value="Choose" disabled hidden>Choose</option>
                             <option value="Yes">Yes</option>
