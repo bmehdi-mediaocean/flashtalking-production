@@ -46,7 +46,7 @@ export const BriefingFormEasyJet = ({ formId }) => {
                     </div>
                 </li>
 
-                <li className="form-li-headline border-t-0">
+                <li className="form-li-headline">
                     <div className="headline-wrapper">Project Details</div>
                 </li>
                 <li className="form-li-full">
@@ -176,8 +176,8 @@ export const BriefingFormEasyJet = ({ formId }) => {
                 <li className="form-li-headline">
                     <div className="headline-wrapper">Image Crops</div>
                 </li>
-                <li className="form-li-full">
-                    <div>Please refer to our <a href="https://flashtalking.sharepoint.com/:f:/s/ukprod/Eiks4COFmhhDnLafgZq8eLUBkbmHSJGobHWexhYuqAhtiA?e=F7750i">Cropping Specs</a> for details</div>
+                <li className="form-li-full min-h-[2rem]">
+                    <div>Please refer to our <a className="text-[#ff6600] font-bold" href="https://flashtalking.sharepoint.com/:f:/s/ukprod/Eiks4COFmhhDnLafgZq8eLUBkbmHSJGobHWexhYuqAhtiA?e=F7750i">Cropping Specs</a> for details</div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
@@ -204,7 +204,7 @@ export const BriefingFormEasyJet = ({ formId }) => {
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="email-supplier-more-info">Email of Supplier / More Information</label>
-                        <textarea id="email-supplier-more-info" name="email-supplier-more-info" />
+                        <textarea id="email-supplier-more-info" name="email-supplier-more-info" className="h-32" />
                         <ValidationError prefix="Email Supplier More Info" field="message" errors={state.errors} />
                     </div>
                 </li>
@@ -230,6 +230,37 @@ export const BriefingFormEasyJet = ({ formId }) => {
                     </div>
                 </li>
 
+                <li className="form-li-headline">
+                    <div className="headline-wrapper">Tracking Information</div>
+                </li>
+                <li className="form-li-full">
+                    <div className="question-wrapper">
+                        <label htmlFor="version_file_name_suffix">Version &#38; File Name Suffix</label>
+                        <Input id="version_file_name_suffix" type="text" name="version_file_name_suffix" placeholder="e.g. FTFR_JL_FR" />
+                        <ValidationError prefix="Version File Name Suffix" field="name" errors={state.errors} />
+                    </div>
+                </li>
+                <li className="form-li-half">
+                    <div className="question-wrapper">
+                        <label htmlFor="versions-added-to">Versions To Be Added To</label>
+                        <select id="versions-added-to" name="versions-added-to" defaultValue="Choose" required>
+                            <option value="Choose" disabled hidden>Choose</option>
+                            <option value="Existing Basefiles">Existing Basefiles</option>
+                            <option value="New Basefiles">New Basefiles</option>
+                            <option value="Not Applicable">Not Applicable</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <ValidationError prefix="Versions Added To" field="name" errors={state.errors} />
+                    </div>
+                </li>
+                <li className="form-li-half">
+                    <div className="question-wrapper">
+                        <label htmlFor="other-versions-added-to">If 'Existing Basefiles' or other, please give details below:</label>
+                        <Input id="other-versions-added-to" type="text" name="other-versions-added-to" />
+                        <ValidationError prefix="Other Versions Added To" field="name" errors={state.errors} />
+                    </div>
+                </li>
+                
                 <li className="form-li-headline">
                     <div className="headline-wrapper">Additional Information</div>
                 </li>
@@ -258,7 +289,7 @@ export const BriefingFormEasyJet = ({ formId }) => {
 
                 <li className="form-li-full py-6 min-h-0 justify-center border-t border-t-slate-300 w-[95%] left-[2.5%] relative">
                     <div className="btn-wrapper">
-                        <button className="btn bg-[#ff6600] hover:bg-[#c75000]" type="submit" disabled={state.submitting}>Submit</button>
+                        <button className="btn bg-[#ff6600] hover:bg-[#ff4600]" type="submit" disabled={state.submitting}>Submit</button>
                     </div>
                 </li>
             </ul>
