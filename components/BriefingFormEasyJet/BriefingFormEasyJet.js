@@ -20,7 +20,7 @@ export const BriefingFormEasyJet = ({ formId }) => {
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="project-title">Project Title <span className="text-red-500">*</span></label>
-                        <Input id="project-title" type="text" name="project-title" required />
+                        <Input id="project-title" type="text" name="project-itle" required />
                         <ValidationError prefix="Project Title" field="name" errors={state.errors} />
                     </div>
                 </li>
