@@ -165,7 +165,7 @@ export const BriefingForm = ({ formId }) => {
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
-                        <label htmlFor="designs-supplied">Designs To Be Supplied By <span className="text-red-500">*</span></label>
+                        <label htmlFor="designs-supplied">Designs To Be Supplied? <span className="text-red-500">*</span></label>
                         <select id="designs-supplied" name="Designs To Be Supplied By" defaultValue="Choose" required>
                             <option value="Choose" disabled hidden>Choose</option>
                             <option value="Yes">Yes</option>
