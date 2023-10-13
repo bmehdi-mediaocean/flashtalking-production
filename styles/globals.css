@@ -8,7 +8,7 @@
     }
 
     .logo-div {
-        @apply pr-5 sm:pr-5 md:pl-5 py-2.5 flex text-flashtalking-pink w-16 h-16;
+        @apply pr-5 md:pl-5 md:pr-0 py-2.5 flex text-flashtalking-pink w-16 h-16;
     }
 
     .btn {
