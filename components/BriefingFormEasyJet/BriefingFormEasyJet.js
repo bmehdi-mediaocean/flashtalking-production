@@ -255,7 +255,7 @@ export const BriefingFormEasyJet = ({ formId }) => {
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
-                        <label htmlFor="other-versions-added-to">If 'Existing Basefiles' or other, please give details below:</label>
+                        <label htmlFor="other-versions-added-to">If &apos;Existing Basefiles&apos; or other, please give details below:</label>
                         <Input id="other-versions-added-to" type="text" name="other-versions-added-to" />
                         <ValidationError prefix="Other Versions Added To" field="name" errors={state.errors} />
                     </div>
