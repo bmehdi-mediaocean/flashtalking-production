@@ -20,7 +20,7 @@
     }
 
     .form-li-half {
-        @apply w-full min-[500px]:w-1/2 py-0 px-6 my-1 flex flex-wrap items-start min-h-[5rem];
+        @apply w-full xs:w-1/2 py-0 px-6 my-1 flex flex-wrap items-start min-h-[5rem];
     }
 
     .form-li-full {

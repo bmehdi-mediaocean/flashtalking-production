@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -19,6 +21,10 @@ module.exports = {
         "sea-glass": "#00c6b3",
         "yellow-tang": "#f4cc3f",
         "flashtalking-pink": "#ec286b",
+      },
+      screens: {
+        'xs':'500px',
+        ...defaultTheme.screens,
       }
     },
   },
