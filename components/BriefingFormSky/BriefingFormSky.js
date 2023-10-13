@@ -48,7 +48,7 @@ export const BriefingFormSky = ({ formId }) => {
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="email">Email Address <span className="text-red-500">*</span></label>
-                        <Input id="email" type="email" name="email" placeholder="email@domain.com" required />
+                        <Input id="email" type="email" name="email" placeholder="name@domain.com" required />
                         <ValidationError prefix="Email Address" field="email" errors={state.errors} />
                     </div>
                 </li>
@@ -62,7 +62,7 @@ export const BriefingFormSky = ({ formId }) => {
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="media-buyer-email">Media Buyer Email Address</label>
-                        <Input id="media-buyer-email" type="email" name="media-buyer-email" placeholder="email@domain.com" />
+                        <Input id="media-buyer-email" type="email" name="media-buyer-email" placeholder="name@domain.com" />
                         <ValidationError prefix="Media Buyer Email Address" field="email" errors={state.errors} />
                     </div>
                 </li>
@@ -198,7 +198,7 @@ export const BriefingFormSky = ({ formId }) => {
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="sign-off-email">Contact Email For Assets and Design Sign Off</label>
-                        <Input id="sign-off-email" type="email" name="sign-off-email" placeholder="email@domain.com" />
+                        <Input id="sign-off-email" type="email" name="sign-off-email" placeholder="name@domain.com" />
                         <ValidationError prefix="Sign Off Email" field="email" errors={state.errors} />
                     </div>
                 </li>
