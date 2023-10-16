@@ -17,14 +17,13 @@ import { theme } from "theme";
 
 export const BlockRenderer = ({ blocks }) => {
     return blocks.map((block) => {
-        console.log("UNKNOWN: ", blocks);
         switch(block.name){
             case "acf/tickitem": {
                 return <TickItem
                     key={block.id}
                 >
                     <BlockRenderer blocks={block.innerBlocks} />
-                </TickItem>
+                </TickItem>;
             }
             case "core/gallery": {
                 return <Gallery
