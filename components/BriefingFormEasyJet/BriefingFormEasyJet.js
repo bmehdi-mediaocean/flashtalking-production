@@ -63,6 +63,13 @@ export const BriefingFormEasyJet = ({ formId }) => {
                 </li>
                 <li className="form-li-full">
                     <div className="question-wrapper">
+                        <label htmlFor="creative_concept_name">Creative Concept Name</label>
+                        <Input id="creative_concept_name" type="text" name="Creative Concept Name" placeholder="e.g. September Refresh" />
+                        <ValidationError prefix="Creative Concept Name" field="name" errors={state.errors} />
+                    </div>
+                </li>
+                <li className="form-li-full">
+                    <div className="question-wrapper">
                         <label htmlFor="markets">Markets <span className="text-red-500">*</span></label>
                         <div className="checkbox-wrapper flex-row">
                             <div className="w-1/2">
@@ -274,14 +281,6 @@ export const BriefingFormEasyJet = ({ formId }) => {
 
                 <li className="form-li-headline">
                     <div className="headline-wrapper">Trafficking Information</div>
-                </li>
-                <li className="form-li-full">
-                    <div className="question-wrapper">
-                        <label htmlFor="version_file_name_suffix">Version &#38; File Name Suffix</label>
-                        <Input id="version_file_name_suffix" type="text" name="Version &#38; File Name Suffix" placeholder="e.g. FTFR_JL_FR" />
-                        <ValidationError prefix="Version File Name Suffix" field="name" errors={state.errors} />
-                        <div className="text-xs pt-[0.375rem]">Please confirm this with Kepler</div>
-                    </div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
