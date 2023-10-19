@@ -142,9 +142,6 @@ export const BriefingFormSky = ({ formId }) => {
                         <ValidationError prefix="Other Dynamic Versions" field="name" errors={state.errors} />
                     </div>
                 </li>
-                <li className="form-li-full min-h-[2rem]">
-                    <div>Please refer to our <a className="text-[#ff6600] font-bold" href="https://flashtalking.sharepoint.com/:f:/s/ukprod/Eiks4COFmhhDnLafgZq8eLUBkbmHSJGobHWexhYuqAhtiA?e=F7750i" target="_blank">Template Guidebooks</a> for details</div>
-                </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
                         <label htmlFor="creative-template">Creative Template <span className="text-red-500">*</span></label>
