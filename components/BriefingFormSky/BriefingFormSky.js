@@ -324,7 +324,7 @@ export const BriefingFormSky = ({ formId }) => {
 
                 <li className="form-li-full py-6 min-h-0 justify-center border-t border-t-slate-300 w-[95%] left-[2.5%] relative">
                     <div className="btn-wrapper">
-                        <button className="btn bg-[#ff6600] hover:bg-[#ff4600]" type="submit" disabled={state.submitting}>Submit</button>
+                        <button className="btn bg-[#000ff5] hover:bg-gradient-to-r from-[#ff00a5] to-[#6e00ff]" type="submit" disabled={state.submitting}>Submit</button>
                     </div>
                 </li>
             </ul>
