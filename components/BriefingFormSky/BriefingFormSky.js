@@ -80,9 +80,10 @@ export const BriefingFormSky = ({ formId }) => {
                 </li>
                 <li className="form-li-full">
                     <div className="question-wrapper">
-                        <label htmlFor="creative_concept_name">Creative Concept Name</label>
-                        <Input id="creative_concept_name" type="text" name="Creative Concept Name" placeholder="e.g. September Refresh" />
-                        <ValidationError prefix="Creative Concept Name" field="name" errors={state.errors} />
+                        <label htmlFor="creative_label">Creative Label</label>
+                        <Input id="creative_label" type="text" name="Creative Label" placeholder="e.g. Nov23Sale" />
+                        <ValidationError prefix="Creative Label" field="name" errors={state.errors} />
+                        <div className="text-xs pt-[0.375rem]">This is to identify the basefiles names and version name prefix.</div>
                     </div>
                 </li>
                 <li className="form-li-full">
@@ -212,15 +213,14 @@ export const BriefingFormSky = ({ formId }) => {
                 </li>
 
                 <li className="form-li-headline">
-                    <div className="headline-wrapper">Image Crops</div>
+                    <div className="headline-wrapper">Design Assets</div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
-                        <label htmlFor="image-crops-supplied">Image Crops Supplied By <span className="text-red-500">*</span></label>
+                        <label htmlFor="image-crops-supplied">Design Assets Supplied By <span className="text-red-500">*</span></label>
                         <select id="image-crops-supplied" name="Image Crops Supplied By" defaultValue="Choose" required>
                             <option value="Choose" disabled hidden>Choose</option>
                             <option value="Direct">Direct</option>
-                            <option value="Existing Imagery">Existing Imagery</option>
                             <option value="Created by Flashtalking">Created by Flashtalking</option>
                             <option value="Other">Other</option>
                         </select>
@@ -266,13 +266,6 @@ export const BriefingFormSky = ({ formId }) => {
 
                 <li className="form-li-headline">
                     <div className="headline-wrapper">Trafficking Information</div>
-                </li>
-                <li className="form-li-full">
-                    <div className="question-wrapper">
-                        <label htmlFor="version_file_suffix_name">Version &amp; File Name Suffix</label>
-                        <Input id="version_file_suffix_name" type="text" name="Version & File Name Suffix" placeholder="e.g. September Refresh" />
-                        <ValidationError prefix="Version & File Name Suffix" field="name" errors={state.errors} />
-                    </div>
                 </li>
                 <li className="form-li-half">
                     <div className="question-wrapper">
