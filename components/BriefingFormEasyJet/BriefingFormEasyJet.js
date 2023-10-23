@@ -100,7 +100,7 @@ export const BriefingFormEasyJet = ({ formId }) => {
                         <label htmlFor="creative-formats">Creative Formats Required <span className="text-red-500">*</span></label>
                         <div className="checkbox-wrapper flex-row">
                             <div className="w-1/2">
-                                <div className="checkbox-input"><Input id="display" type="checkbox" name="Creative Formats Required: Display" /><label htmlFor="display">Display (standard 8 sizes)</label></div>
+                                <div className="checkbox-input"><Input id="display" type="checkbox" name="Creative Formats Required: Display" /><label htmlFor="display">Display (standard 7 sizes)</label></div>
                                 <div className="checkbox-input"><Input id="social-video" type="checkbox" name="Creative Formats Required: Social Video" /><label htmlFor="social-video">Social Video</label></div>
                                 <div className="checkbox-input"><Input id="social-static" type="checkbox" name="Creative Formats Required: Social Static" /><label htmlFor="social-static">Social Static</label></div>
                                 <div className="checkbox-input"><Input id="olv" type="checkbox" name="Creative Formats Required: OLV" /><label htmlFor="olv">OLV</label></div>
