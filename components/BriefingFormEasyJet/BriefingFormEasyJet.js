@@ -158,7 +158,6 @@ export const BriefingFormEasyJet = ({ formId }) => {
                         <select id="creative-template" name="Creative Template" defaultValue="Choose" required>
                             <option value="Choose" disabled hidden>Choose</option>
                             <option value="Generic (Flights, BAU, etc.)">Generic (Flights, BAU, etc.)</option>
-                            <option value="Flights + Holidays">Flights + Holidays</option>
                             <option value="Holidays">Holidays</option>
                             <option value="Sales">Sales</option>
                             <option value="New Template">New Template</option>
