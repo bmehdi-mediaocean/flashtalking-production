@@ -127,7 +127,7 @@ export const BriefingFormEasyJet = ({ formId }) => {
                         <label htmlFor="creative-information">Creative Sizes / Video Lengths etc.</label>
                         <textarea id="creative-information" name="Creative Sizes / Video Lengths etc." />
                         <ValidationError prefix="Creative Information" field="message" errors={state.errors} />
-                        <div className="text-xs pt-[0.375rem]">Please specify sizes required for each channel. For Display, please list any additional sizes/formats beyond the standard 8. For Video, please specify video lengths (e.g., 6&quot;, 10&quot;, etc.)</div>
+                        <div className="text-xs pt-[0.375rem]">Please specify sizes required for each channel. For Display, please list any additional sizes/formats beyond the standard 7. For Video, please specify video lengths (e.g., 6&quot;, 10&quot;, etc.)</div>
                     </div>
                 </li>
                 <li className="form-li-half">
