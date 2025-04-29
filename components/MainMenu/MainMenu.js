@@ -9,7 +9,7 @@ export const MainMenu = ({ items, ctaLabel, ctaDestination }) => {
             <Link href="/" className="flex w-full">
                 <Image
                     alt="Logo"
-                    src="/flashtalking.svg"
+                    src="/innovid.svg"
                     width={0}
                     height={0}
                     priority
